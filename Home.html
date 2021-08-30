@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- home css -->
+    <link rel="stylesheet" href="css/home.css">
+    <!-- font awesome -->
+    <script src="js/font.awesome.4.js"></script>
+    <title>Game Shop</title>
+</head>
+
+<body>
+    <!-- search bar -->
+    <section class="search">
+        <div class="p-5">
+            <form class="d-flex" action="">
+                <input type="text" class="search-input py-3 form-control" placeholder="SEARCH ...">
+                <button onclick="searchClose()" class="btn btn-outline-danger px-4 mx-3"><span class="search-close-icon" aria-hidden="true">&times;</span>
+                    </button>
+            </form>
+        </div>
+    </section>
+    <!-- end search bar -->
+
+    <!-- header -->
+    <section class="header">
+        <nav class="navbar navbar-dark navbar-expand-sm">
+            <div class="ps-logo p-1 m-1">
+                <img class="img-fluid" src="image/PlayStation_logo.png" alt="ps logo">
+            </div>
+            <button class="navbar-toggler ml-0" type="button" data-toggle="collapse" data-target="#mynav">
+                <span class="navbar-icon">
+                    <i class="fas fa-bars"></i>
+                  </span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynav">
+                <ul class="navbar-nav headernav-items mx-auto">
+                    <a class="nav-item nav-link p-2 mx-1" href="# ">Home</a>
+                    <a class="nav-item nav-link p-2 mx-1" href="# ">Games</a>
+                    <a class="nav-item nav-link p-2 mx-1" href="# ">Log in</a>
+                    <a class="nav-item nav-link p-2 mx-1" href="# ">Sign up</a>
+                    <a class="nav-item nav-link p-2 mx-1" href="# ">About us</a>
+                    <div class="search-logo-2 p-2 d-sm-none" id="search" onclick="searchAppear()">
+                        <a><i class="fas fa-search"></i></a>
+                    </div>
+                </ul>
+            </div>
+            <div class="search-logo p-2 d-none d-sm-block" id="search" onclick="searchAppear()">
+                <a><i class="fas fa-search"></i></a>
+            </div>
+        </nav>
+    </section>
+    <!-- end header -->
+
+    <!-- ps5 -->
+    <div>
+        <div class="ps5">
+            <div class="d-flex flex-column align-items-end ps5-image p-5 text-uppercase">
+                <div class="ps5-title-move d-flex flex-column align-items-end">
+                    <h4>the brand new</h4>
+                    <h3>ps5</h3>
+                </div>
+                <a href="#" class="ps5-order mt-4 p-3">
+                    <h4 class="my-1">order now!!!</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- end ps5 -->
+
+    <!-- game slider -->
+    <section class="game-slider-container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2500">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active slider-image">
+                    <img src="image/daysGone2.jpg" alt="daysgone">
+                    <div class="carousel-caption">
+                        <h3 class="text-capitalize slider-caption py-2">with our special open world games</h3>
+                    </div>
+                </div>
+
+                <div class="carousel-item slider-image">
+                    <img src="image/godOfWar42.jpg" alt="godofwar4">
+                    <div class="carousel-caption">
+                        <h3 class="text-capitalize slider-caption py-2">experience a whole new world</h3>
+                    </div>
+                </div>
+
+                <div class="carousel-item slider-image">
+                    <img src="image/spiderman2.jpg" alt="spiderman">
+                    <div class="carousel-caption">
+                        <h3 class="text-capitalize slider-caption py-2">just in play station</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end game slider -->
+
+
+    <!-- products category section -->
+    <section class="py-5">
+        <div class="container">
+            <!-- title -->
+            <div class="d-flex justify-content-center text-uppercase">
+                <h3 class="product-category-title font-weight-bold my-1 px-5 py-2">product category</h3>
+            </div>
+            <!-- end title -->
+            <div class="row">
+                <div class="col-8 col-lg-6  col-md-4 mx-auto mt-4">
+                    <div class="product-category ps4-category">
+                        <div class="product-category-caption p-5">
+                            <h3 class="text-capitalize">ps4 games</h3>
+                            <button class="product-category-btn text-capitalize btn btn-outline-light">more ...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-lg-6  col-md-4 mx-auto mt-4">
+                    <div class="product-category xbox-category">
+                        <div class="product-category-caption p-5">
+                            <h3 class="text-capitalize">xbox games</h3>
+                            <button class="product-category-btn text-capitalize btn btn-outline-light">more ...</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-lg-6  col-md-4 mx-auto mt-4">
+                    <div class="product-category console-category">
+                        <div class="product-category-caption p-5">
+                            <h3 class="text-capitalize">consoles</h3>
+                            <button class="product-category-btn text-capitalize btn btn-outline-light">more ...</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end products category section -->
+
+    <!-- quotes section -->
+    <section class="quotes-container py-5">
+        <div class="container">
+            <!-- title -->
+            <div class="d-flex justify-content-center text-uppercase mb-4">
+                <h3 class="quotes-title font-weight-bold my-1 px-5 py-2">comments</h3>
+            </div>
+            <!-- end title -->
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-3 mb-2">
+                    <div class="card product-card">
+                        <img class="img-fluid card-img-top" src="image/2.jpg" alt="game cover">
+                        <div class="card-body">
+                            <h4 class="text-uppercase text-center">fifa 21</h4>
+                            <div class="quote text-center">
+                                <span><i class="fas fa-quote-left"></i></span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ipsa.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-block text-capitalize product-btn">buy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 mb-2">
+                    <div class="card product-card">
+                        <img class="img-fluid card-img-top" src="image/4.jpg" alt="game cover">
+                        <div class="card-body">
+                            <h4 class="text-uppercase text-center">nba 21</h4>
+                            <div class="quote text-center">
+                                <span><i class="fas fa-quote-left"></i></span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ipsa.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-block text-capitalize product-btn">buy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 mb-2">
+                    <div class="card product-card">
+                        <img class="img-fluid card-img-top" src="image/3.jpeg" alt="game cover">
+                        <div class="card-body">
+                            <h4 class="text-uppercase text-center">god of war</h4>
+                            <div class="quote text-center">
+                                <span><i class="fas fa-quote-left"></i></span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ipsa.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-block text-capitalize product-btn">buy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-3 mx-auto">
+                    <div class="card product-card">
+                        <img class="img-fluid card-img-top" src="image/6.jpg" alt="game cover">
+                        <div class="card-body">
+                            <h4 class="text-uppercase text-center">red dead 2</h4>
+                            <div class="quote text-center">
+                                <span><i class="fas fa-quote-left"></i></span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, ipsa.</p>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-block text-capitalize product-btn">buy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end quotes section -->
+
+    <!-- email secton -->
+    <section class="email py-5">
+        <div class="container">
+            <!-- title -->
+            <div class="d-flex justify-content-center text-uppercase mb-4">
+                <h3 class="email-title font-weight-bold my-1 px-5 py-2">join us!</h3>
+            </div>
+            <!-- end title -->
+            <input type="email" class="form-control email-input text-capitalize" placeholder="enter your email ...">
+            <button class="btn email-btn btn-block text-capitalize mt-1">join</button>
+        </div>
+    </section>
+    <!-- end email secton -->
+
+    <!-- ps5 abilities -->
+    <section class="my-5">
+        <!-- title -->
+        <div class="d-flex justify-content-center text-uppercase mb-4">
+            <h3 class="ps5-ability-title font-weight-bold my-1 px-5 py-2">ps5</h3>
+        </div>
+        <!-- end title -->
+        <div class="container">
+            <div class="row mx-0">
+                <div class="col-lg-6"><img class="img-fluid rounded" src="image/ps5-b.jpg" alt=""></div>
+                <div class="col-lg-6">
+                    <div class="row h-100">
+                        <div class="row ml-1 w-100">
+                            <div class="col-lg-6 ps5-ability ps5-ability-color">
+                                <div class="py-4 ps5-ability-caption">
+                                    <p class="text-uppercase font-weight-bold">powerfull</p>
+                                    <i class="fas fa-microchip fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 ps5-ability">
+                                <div class="py-4 ps5-ability-caption">
+                                    <p class="text-uppercase font-weight-bold">long lasting battery</p>
+                                    <i class="fa fa-battery-full fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ml-1 w-100">
+                            <div class="col-lg-6 ps5-ability">
+                                <div class="py-4 ps5-ability-caption">
+                                    <p class="text-uppercase font-weight-bold">fast</p>
+                                    <i class="fas fa-fast-forward fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 ps5-ability ps5-ability-color">
+                                <div class="py-4 ps5-ability-caption">
+                                    <p class="text-uppercase font-weight-bold">stylish design</p>
+                                    <i class=" 	fas fa-magic fa-2x"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end ps5 abilities -->
+
+    <!-- footer -->
+    <footer class="text-capitalize">
+        <div class="d-flex justify-content-between pt-4">
+            <div class="text-center col-6">
+                <h3 class="footer-caption-title">contact us</h3>
+                <p>address : Lorem ipsum dolor sit amet.</p>
+                <p>tell : 04187274387</p>
+                <p>fax : 04187274387</p>
+            </div>
+            <div class="text-center col-6">
+                <h3 class="footer-caption-title">social media</h3>
+                <div class="social-media d-flex justify-content-around">
+                    <div>
+                        <i class="i fab fa-facebook mx-2" aria-hidden="true"></i>
+                        <i class="i fab fa-instagram mx-2" aria-hidden="true"></i>
+                        <i class="i fab fa-telegram mx-2" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <i class="i fab fa-youtube mx-2" aria-hidden="true"></i>
+                        <i class="i fab fa-linkedin mx-2" aria-hidden="true"></i>
+                        <i class="i fab fa-pinterest mx-2" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- jquery js -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- my js -->
+    <script src="js/home.js"></script>
+
+
+</body>
+
+</html>

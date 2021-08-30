@@ -1,0 +1,389 @@
+:root {
+    --lavender: #E6E6FA;
+    --mylightblue: #355267;
+    --mydarkblue: #0f3d61;
+    --mylightgray: #3d3d42;
+    --myblack: #06060e;
+    --verylightgray: #6c6c6c;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--mylightblue);
+}
+
+
+/* search bar */
+
+.search-close-icon {
+    font-size: 2.5rem;
+}
+
+.search {
+    background: var(--mylightgray);
+    display: none;
+}
+
+.search-appear {
+    display: block !important;
+}
+
+.search-input {
+    background: transparent;
+    border: 2px solid var(--mylightblue);
+    color: var(--lavender) !important;
+}
+
+.search-input:focus {
+    background: transparent;
+    border-color: var(--mylightblue);
+    box-shadow: none;
+}
+
+.search-input::placeholder {
+    color: var(--lavender);
+    opacity: 0.3;
+}
+
+
+/* header */
+
+.header {
+    background: var(--mylightblue);
+}
+
+.ps-logo {
+    height: 4rem;
+    width: 4rem;
+    border: 1px solid var(--mylightblue);
+    border-radius: 100%;
+    transition: all 0.5s ease-in;
+}
+
+.ps-logo:hover {
+    background: var(--lavender);
+}
+
+.search-logo {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--lavender);
+    transition: all 0.3s ease-in;
+}
+
+.search-logo:hover {
+    font-size: 1.7rem;
+}
+
+.search-logo-2 {
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--lavender);
+    transition: all 0.3s ease-in;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.search-logo-2:hover {
+    background-color: var(--lavender);
+    color: black !important;
+    border-radius: 4px;
+}
+
+.headernav-items>a {
+    border-radius: 4px;
+    color: var(--lavender) !important;
+    transition: all 0.5s ease-in;
+}
+
+.headernav-items>a:hover {
+    background-color: var(--lavender);
+    color: black !important;
+}
+
+.navbar-toggler {
+    outline-color: var(--mylightblue) !important;
+}
+
+.navbar-icon {
+    font-size: 1.7rem;
+    color: var(--lavender);
+}
+
+
+/* ps5 */
+
+.ps5 {
+    height: 100vh;
+    width: 100%;
+    background: url("../image/ps5-black.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ps5-image {
+    color: var(--lavender);
+}
+
+.ps5-title-move {
+    padding-right: 10px;
+    border-right: 3px solid var(--mylightblue);
+    transition: all 1s ease-in-out;
+}
+
+.ps5-title-move:hover {
+    transform: translateX(-40px);
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
+
+.ps5-order {
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--lavender);
+    transition: all 1s ease-in-out;
+    opacity: .6;
+}
+
+.ps5-order:hover {
+    border-radius: 8px;
+    color: var(--lavender);
+    background: var(--mylightblue);
+    transition: all 1s ease-in-out;
+    text-decoration: none;
+}
+
+
+/* game slider */
+
+.slider-caption {
+    background: var(--myblack);
+    opacity: .5;
+    border-radius: 8px;
+}
+
+
+/* product category */
+
+.product-category-title {
+    background: var(--verylightgray);
+    color: var(--lavender);
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.product-category {
+    position: relative;
+    transition: all 1s ease-in-out;
+    height: 250px;
+}
+
+.ps4-category {
+    background: url("../image/daysgone3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.xbox-category {
+    background: url("../image/forza-horizon-4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.console-category {
+    background: url("../image/consoles.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.product-category-caption {
+    transition: all 1s ease-in-out;
+    color: var(--lavender);
+}
+
+.product-category:hover .product-category-caption {
+    margin-left: 40px;
+    transition: all 1s ease-in-out;
+    color: var(--myblack);
+}
+
+.product-category:hover {
+    opacity: .6;
+    transition: all 1s ease-in-out;
+}
+
+.product-category-btn {
+    position: relative;
+    z-index: 99;
+}
+
+
+/* quotes section */
+
+.quotes-title {
+    background: var(--verylightgray);
+    color: var(--lavender);
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.quotes-container {
+    background: var(--mydarkblue);
+}
+
+.product-card {
+    background: var(--mylightgray);
+    color: var(--lavender);
+}
+
+.product-btn {
+    background: var(--mylightblue);
+    color: var(--lavender);
+    transition: all .5s ease-in;
+}
+
+.product-btn:hover {
+    opacity: .5;
+    transition: all .5s ease-in;
+}
+
+.product-btn:focus {
+    box-shadow: none;
+}
+
+
+/* email section */
+
+.email-title {
+    background: var(--verylightgray);
+    color: var(--lavender);
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.email {
+    background: url("../image/playstation.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.email-input {
+    border: none;
+    padding: 15px;
+    background-color: var(--mylightblue);
+}
+
+.email-input:focus {
+    box-shadow: none;
+    color: var(--lavender);
+    border: none;
+    background-color: var(--mylightblue);
+}
+
+.email-btn {
+    background-color: var(--mylightblue);
+    transition: all .5s ease-in;
+}
+
+.email-btn:focus {
+    box-shadow: none;
+}
+
+.email-btn:hover {
+    opacity: .5;
+    transition: all .5s ease-in;
+}
+
+
+/* ps5 ability section */
+
+.ps5-ability-container {
+    border-radius: 10px;
+}
+
+.ps5-ability-title {
+    background: var(--verylightgray);
+    color: var(--lavender);
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+}
+
+.ps5-ability {
+    background: var(--verylightgray);
+    transition: all 1s ease-in-out;
+}
+
+.ps5-ability:hover {
+    background: var(--lavender);
+    color: black;
+    transition: all 1s ease-in-out;
+}
+
+.ps5-ability-caption {
+    transition: all 1s ease-in-out;
+}
+
+.ps5-ability:hover .ps5-ability-caption {
+    transform: translateX(50px);
+    transition: all 1s ease-in-out;
+}
+
+.ps5-ability-color {
+    background: var(--mylightgray);
+    color: rgb(216, 205, 187);
+}
+
+
+/* footer */
+
+footer {
+    background: var(--myblack);
+    color: var(--lavender);
+}
+
+.social-media {
+    font-size: 1.4rem;
+}
+
+.footer-caption-title {
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--lavender);
+}
+
+.fa-facebook:hover {
+    color: rgb(24, 119, 242);
+    transition: all 1s ease-in-out;
+}
+
+.fa-instagram:hover {
+    color: rgb(195, 42, 163);
+    transition: all 1s ease-in-out;
+}
+
+.fa-telegram:hover {
+    color: rgb(0, 136, 204);
+    transition: all 1s ease-in-out;
+}
+
+.fa-youtube:hover {
+    color: rgb(255, 0, 0);
+    transition: all 1s ease-in-out;
+}
+
+.fa-linkedin:hover {
+    color: rgb(10, 102, 194);
+    transition: all 1s ease-in-out;
+}
+
+.fa-pinterest:hover {
+    color: rgb(189, 8, 28);
+    transition: all 1s ease-in-out;
+}
+
+.i {
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+}
